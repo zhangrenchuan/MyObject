@@ -1,0 +1,151 @@
+
+#iconWall{
+    list-style: none;
+    /*解决非文本问题的高度塌陷*/
+    overflow: hidden;
+    /*每行6个盒子*/
+    width: 540px;
+
+    /*设置样式*/
+    margin: 0 auto;
+    padding:0 0 1px 1px;
+}
+
+
+#iconWall li{
+    /*为品牌墙所有li设置共同样式*/
+    /*background-color: #ffffff;*/
+    width:121px;
+    height: 108px;
+    float: left;
+
+    /*设置盒子间距.等同于设置border*/
+    margin-right: 1px;
+    margin-top: 1px;
+
+    position: relative;
+}
+
+
+
+/*设置图片样式*/
+.img-icon, .img-back, .img-front{
+    width: 100%;
+    height: 100%;
+}
+.img-icon{
+    /*为图片的父元素开启3D空间*/
+    transform-style: preserve-3d;
+    background-color: #ffffff;
+
+    position: relative;
+}
+/*3D图片正反面样式设置*/
+.img-back, .img-front{
+    position: absolute;
+    text-align: center;
+    line-height: 108px;
+}
+/*设置图片垂直方向居中*/
+.img-icon img{
+    vertical-align: middle;
+}
+/*反面翻过来显示正面效果*/
+.img-back{
+    transform: rotateY(180deg);
+}
+/*前面的3D图片使背面隐藏*/
+.img-front{
+    backface-visibility: hidden;
+}
+
+/*测试代码效果
+.img-3d:hover{
+    transform: rotateY(180deg);
+    transition: 1s;
+}
+*/
+
+
+
+
+/*单击li样式*/
+#btnRefresh{
+    transition: .3s;
+    background-color: #ffffff;
+}
+/*移入图标效果*/
+#btnRefresh:hover{
+    background-color: #dd2727;
+    transition:0s;
+}
+/*刷新图标引入*/
+.icon-refresh{
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url("../img2/refresh.png");
+    margin: 34px auto 0 ;
+}
+#btnRefresh p{
+    text-align: center;
+    font-family: fantasy;
+    margin: 0;
+}
+/*点击换一批后变色*/
+#btnRefresh:hover .icon-refresh{
+    background: url("../img2/refresh-white.png");
+}
+#btnRefresh:hover p{
+    color: #fff;
+}
+
+
+
+/*设置浮层*/
+.mask{
+    width:121px;
+    height: 108px;
+    background: rgba(0,0,0,.7);
+
+    position: absolute;
+    top:0;
+
+    opacity: 0;
+}
+/*设置浮层鼠标移入显示*/
+iconWall>li:hover .mask{
+    opacity: 1;
+    transition: .3s;
+}
+/*设置心型图片*/
+.icon-heart{
+    width:17px;
+    height: 15px;
+    background: url("../img/heart.png");
+    float: right;
+    margin:8px 8px 0 0 ;
+}
+/*设置p标签内文字样式*/
+.mask p{
+    color: #fff;
+    margin-top: 40px;
+    font-size: 12px;
+    text-align: center;
+}
+/*设置超链接样式*/
+.mask a{
+    font-size: 12px;
+    color: #fff;
+    background-color: red;
+    text-align: center;
+    display: block;
+    width: 68px;
+    height: 16px;
+    line-height: 16px;
+    margin: 5px auto 0 ;
+    padding: 2px;
+
+    /*圆角样式*/
+    border-radius: 8px;
+}

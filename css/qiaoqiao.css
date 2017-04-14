@@ -1,0 +1,316 @@
+.box-x {
+    height: 50px;
+    width: 500px;
+    background-color: orange;
+
+    animation: zhuan 4s  linear infinite ;
+}
+.sj{
+    height: 0px;
+    width: 0px;
+
+    border-top: 100px solid transparent;
+    border-left: 100px solid green;
+
+    position: relative;
+    top: 20px;
+    left:200px;
+    transform: rotate(135deg);
+}
+@keyframes zhuan {
+    0%{
+        transform: rotate(15deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(15deg);
+    }
+}
+
+.face {
+    margin: 80px 0 0 200px;
+    height: 80px;
+    width: 80px;
+    background-color: #fddb1a;
+    position: relative;
+    top:-80px;
+    left:-190px;
+    border-radius: 50%;
+}
+
+.zuiba{
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 0 0 #000;
+    transform: rotate(225deg);
+
+    position: relative;
+    top:16px;
+    left:10px;
+}
+
+.saihong{
+    height: 4px;
+    width: 24px;
+    background-color: #ffc3b6;
+    border-radius: 50%;
+
+    box-shadow: 0 0 12px 0 #f3f3f3;
+    position: relative;
+    top:-45px;
+    left:6px;
+
+}
+
+.saihong1{
+    height: 4px;
+    width: 24px;
+    background-color: #ffc3b6;
+    border-radius: 50%;
+
+    box-shadow: 0 0 12px 0 #f3f3f3;
+    position: relative;
+    top:-48px;
+    left:50px;
+
+}
+.zuoyan{
+    height: 5px;
+    width: 32px;
+    background-color: #fff;
+    border: 1px solid #c0a16b;
+    border-radius:700px 700px 290px 290px;
+    position: relative;
+    top:-40px;
+    left:-1px;
+
+}
+.youyan{
+    height: 5px;
+    width: 32px;
+    background-color: #fff;
+    border: 1px solid #c0a16b;
+    border-radius:700px 700px 290px 290px;
+    position: relative;
+    top:-46px;
+    left:46px;
+
+}
+.yanjing1{
+    height: 4px;
+    width: 4px;
+    background-color: #443128;
+    border-radius: 50%;
+    position: absolute;
+    top:2px;
+
+    animation: yan1 5s linear infinite;
+}
+.yanjing2{
+    height: 4px;
+    width: 4px;
+    background-color: #443128;
+    border-radius: 50%;
+    position: absolute;
+    top:1px;
+
+    animation: yan1 5s linear infinite  ;
+}
+@keyframes yan1 {
+    0%{
+        left:2px;
+    }
+    10%{
+        left:8px;
+    }
+    15%{
+        left:13px;
+    }
+    30%{
+        left:20px;
+    }
+    40%{
+        left:28px;
+    }
+    50%{
+        left:32px;
+    }
+    60%{
+        left:28px;
+    }
+    70%{
+        left:20px;
+    }
+    80%{
+        left:13px;
+    }
+    90%{
+        left:8px;
+    }
+    100%{
+        left:2px;
+    }
+}
+.meimao1{
+    height: 20px;
+    width: 16px;
+
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 0 0 #000;
+
+
+    position: relative;
+    top:-75px;
+    left:3px;
+
+    transform: rotate(50deg);
+}
+
+.meimao2{
+    height: 20px;
+    width: 16px;
+
+    border-radius: 50%;
+    box-shadow: inset 2px 2px 0 0 #000;
+
+
+    position: relative;
+    top:-95px;
+    left:60px;
+
+    transform: rotate(-290deg);
+}
+
+
+
+
+
+
+
+.face11 {
+    margin: 80px 0 0 200px;
+    height: 80px;
+    width: 80px;
+    background-color: #fdd574;
+
+
+    border-radius: 50%;
+
+    position: relative;
+    left: 215px;
+    top: -240px;;
+}
+.zuiba11{
+    height: 3px;
+    width: 3px;
+    background-color: #493213;
+
+    border-radius: 50%;
+
+
+
+    position: absolute;
+    left:40px;
+    top:60px;
+
+}
+
+.zuoyan11{
+    height: 10px;
+    width: 10px;
+    background-color: #492f12;
+    border-radius: 50%;
+    position: absolute;
+    left:20px;
+    top:26px;
+}
+
+.youyan11{
+    height: 10px;
+    width: 10px;
+    background-color: #492f12;
+    border-radius: 50%;
+    position: absolute;
+    left:55px;
+    top:28px;
+}
+.zuoyan11:after{
+    content: '';
+    height: 2px;
+    width: 3px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left:4px;
+    top:4px;
+}
+.youyan11:after{
+    content: '';
+    height: 2px;
+    width: 3px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left:4px;
+    top:4px;
+}
+.meimao111{
+    height: 8px;
+    width: 10px;
+
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 0 0 #000;
+    transform: rotate(165deg);
+
+    position: absolute;
+    left:17px;
+    top:15px;
+
+    animation:mm1 3s linear infinite  ;
+}
+
+.meimao112{
+    height: 8px;
+    width: 10px;
+
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 0 0 #000;
+    transform: rotate(255deg);
+
+    position: absolute;
+    left:58px;
+    top:16px;
+
+    animation:mm2 3s linear infinite  ;
+
+}
+
+@keyframes mm1 {
+    0%{
+        transform: rotate(165deg);
+    }
+    50%{
+        transform: rotate(210deg);
+    }
+    100%{
+        transform: rotate(165deg);
+    }
+}
+
+@keyframes mm2 {
+    0%{
+        transform: rotate(255deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(255deg);
+    }
+}

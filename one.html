@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/one.css">
+    <link rel="stylesheet" href="css/clock.css">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="stylesheet" href="css/img.css">
+    <link rel="stylesheet" href="css/articleHot.css">
+    <link rel="stylesheet" href="css/iconWall.css">
+    <link rel="stylesheet" href="css/qiaoqiao.css">
+    <link rel="stylesheet" href="css/xiaolian.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="clock" id="x1">
+                <!-- 添加刻度 -->
+                <ul id="item"></ul>
+                <!-- 添加时针-->
+                <div id="hour"></div>
+                <div id="min"></div>
+                <div id="second"></div>
+            </div>
+        </div>
+
+        <div class="header-content">
+            <ul id="nav">
+                <li class="nav-1"><a href="#x1">首页</a></li>
+                <li class="nav-1"><a href="#x2">内容</a></li>
+                <li class="nav-1"><a href="#x3">底部</a></li>
+                <li class="nav-1"><a href="BaseGraph.html" target="_blank">关于</a></li>
+            </ul>
+
+            <div class="main" id="x2">
+                    <span class="font-1">
+            <span style="white-space:pre;">    酬乐天扬州初逢席上见赠<br></span>
+                        <span style="white-space:pre;">                            [唐] 刘禹锡<br></span>
+                        巴山楚水凄凉地 , 二十三年弃置身 .<br>
+                        怀旧空吟闻笛赋 , 到乡翻似烂柯人 .<br>
+                        苟利国家生死以 , 岂因祸福避趋之 .<br>
+                        今日听君歌一曲 , 暂凭杯酒长精神 .<br>
+                    </span>
+            </div>
+        </div>
+
+        <div class="header-right">
+
+            <audio controls="controls" autoplay="autoplay">
+                <source src="mp3/shimianmaifu.mp3" type="audio/mpeg">
+                <source src="mp3/luohualiushui.mp3" type="audio/mpeg">
+
+            </audio>
+
+            <div class="box-3d" id="box3d">
+                <div class="box box1">1</div>
+                <div class="box box2">2</div>
+                <div class="box box3">3</div>
+                <div class="box box4">4</div>
+                <div class="box box5">5</div>
+                <div class="box box6">6</div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-left">
+            <div class="img-3d">
+                <img src="img/1.jpg" alt="">
+                <img src="img/5.jpg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpg" alt="">
+                <img src="img/9.jpg" alt="">
+            </div>
+            <button id="btnImg">点一下</button>
+        </div>
+        <div class="content-con">
+            <div class="box-a">
+                <ul id="nav-2">
+                    <li class="nav-3"><a href="#">壹</a></li>
+                    <li class="nav-3"><a href="#">贰</a></li>
+                    <li class="nav-3"><a href="#">叁</a></li>
+                    <li class="nav-3"><a href="#">肆</a></li>
+                    <li class="nav-3"><a href="#">伍</a></li>
+                    <li class="nav-3"><a href="#">陸</a></li>
+                    <li class="nav-3"><a href="#">柒</a></li>
+                    <li class="nav-3"><a href="#">捌</a></li>
+                    <li class="nav-3"><a href="#">玖</a></li>
+                    <li class="nav-3"><a href="#">丗</a></li>
+                    <li class="nav-3"><a href="#">丗壹</a></li>
+                    <li class="nav-3"><a href="#">丗贰</a></li>
+                </ul>
+            </div>
+            <div class="box-b">
+                <!--热门文章的区域-->
+                <div class="article-hot" id="articleHot">
+                    <!--添加页签-->
+                    <div class="tab tab-day" id="tabDay">国内</div>
+                    <div class="tab" id="tabWeek">国际</div>
+
+                    <div class="tab-content tab-content-day" id="tabContentDay">
+                        <!--i = icon(图标)-->
+
+                        <!--
+                            alt -- 应用在img,内容可以被搜索引擎检索.图标没加载成功会显示该文字
+                            title -- 仅做用户提示,搜索引擎不会检索
+                        -->
+
+                        <ul class="articles" id="tabContentWeek">
+                            <li><i class="icon icon1"></i><a title="完整的标题" class="article-title" href="#">习近平: 抓住"关键少数"深化全面从严治党</a><a class="author" href="#">新华社</a> </li>
+                            <li><i class="icon icon2"></i><a title="完整的标题" class="article-title" href="#">台企联会长: 台当局把现状搞的面目全非,百姓承担.</a><a class="author" href="#">澎湃新闻网</a></li>
+                            <li><i class="icon icon3"></i><a title="完整的标题" class="article-title" href="#">食药监局: 虚假标注食品生产日期最高可罚3万元.</a><a class="author" href="#">北青网</a></li>
+                            <li><i class="icon icon4"></i><a title="完整的标题" class="article-title" href="#">比极光个头大! 路虎全新SUV不剑指Macan?</a><a class="author" href="#">网易汽车</a></li>
+                            <li><i class="icon icon5"></i><a title="完整的标题" class="article-title" href="#">浙江破获假化妆品案, 假兰蔻等按正品估值超8亿</a><a class="author" href="#">网易新闻</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" >
+                        <ul class="articles">
+                            <li><i class="icon icon1"></i><a title="完整的标题" class="article-title" href="#">仅差93分! 诺天王3万分倒计时,不退役或可超大帅</a><a class="author" href="#">网易体育</a> </li>
+                            <li><i class="icon icon2"></i><a title="完整的标题" class="article-title" href="#">民调: 越来越多的美国人支持弹劾特朗普.</a><a class="author" href="#">中国之音</a></li>
+                            <li><i class="icon icon3"></i><a title="完整的标题" class="article-title" href="#">韩媒: 金正男遭两名女子下毒身亡. 2日后金正恩首次露面</a><a class="author" href="#">朝鲜日报</a></li>
+                            <li><i class="icon icon4"></i><a title="完整的标题" class="article-title" href="#">日本欲将"钓鱼岛是固有领土"写进日本课本. 韩国强烈抗议</a><a class="author" href="#">米粉防务</a></li>
+                            <li><i class="icon icon5"></i><a title="完整的标题" class="article-title" href="#">特朗普: 以巴和平, "一国""两国"我都能接受</a><a class="author" href="#">凤凰网</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box-c">
+                <ul id="iconWall">
+                    <li>
+                        <div class="img-icon">
+                            <div class="img-back">
+                                <img src="img2/icon2.jpg" alt="">
+                            </div>
+                            <div class="img-front">
+                                <img src="img2/icon1.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!--浮层-->
+                        <div class="mask">
+                            <i class="icon-heart"></i>
+                            <p>关注人数:300万人</p>
+                            <a href="#">点击进入</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-icon">
+                            <div class="img-back">
+                                <img src="img2/icon3.jpg" alt="">
+                            </div>
+                            <div class="img-front">
+                                <img src="img2/icon4.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!--浮层-->
+                        <div class="mask">
+                            <i class="icon-heart"></i>
+                            <p>关注人数:300万人</p>
+                            <a href="#">点击进入</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-icon">
+                            <div class="img-back">
+                                <img src="img2/icon5.jpg" alt="">
+                            </div>
+                            <div class="img-front">
+                                <img src="img2/icon6.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!--浮层-->
+                        <div class="mask">
+                            <i class="icon-heart"></i>
+                            <p>关注人数:300万人</p>
+                            <a href="#">点击进入</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-icon">
+                            <div class="img-back">
+                                <img src="img2/icon7.jpg" alt="">
+                            </div>
+                            <div class="img-front">
+                                <img src="img2/icon8.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!--浮层-->
+                        <div class="mask">
+                            <i class="icon-heart"></i>
+                            <p>关注人数:300万人</p>
+                            <a href="#">点击进入</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-icon">
+                            <div class="img-back">
+                                <img src="img2/icon9.jpg" alt="">
+                            </div>
+                            <div class="img-front">
+                                <img src="img2/icon10.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!--浮层-->
+                        <div class="mask">
+                            <i class="icon-heart"></i>
+                            <p>关注人数:300万人</p>
+                            <a href="#">点击进入</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-icon">
+                            <div class="img-back">
+                                <img src="img2/icon25.jpg" alt="">
+                            </div>
+                            <div class="img-front">
+                                <img src="img2/icon18.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!--浮层-->
+                        <div class="mask">
+                            <i class="icon-heart"></i>
+                            <p>关注人数:300万人</p>
+                            <a href="#">点击进入</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-icon">
+                            <div class="img-back">
+                                <img src="img2/icon36.jpg" alt="">
+                            </div>
+                            <div class="img-front">
+                                <img src="img2/icon38.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <!--浮层-->
+                        <div class="mask">
+                            <i class="icon-heart"></i>
+                            <p>关注人数:300万人</p>
+                            <a href="#">点击进入</a>
+                        </div>
+                    </li>
+
+                    <li id="btnRefresh">
+                        <!--单击区域-->
+                        <i class="icon-refresh" id="iconRefresh"></i>
+                        <p>换一批</p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="box-x">
+                <div class="face">
+                    <div class="zuiba"></div>
+                    <div class="zuoyan">
+                        <div class="yanjing1"></div>
+                    </div>
+                    <div class="youyan">
+                        <div class="yanjing2"></div>
+                    </div>
+                    <div class="saihong"></div>
+                    <div class="saihong1"></div>
+                    <div class="meimao1"></div>
+                    <div class="meimao2"></div>
+                </div>
+
+                <div class="face11">
+                    <div class="zuiba11"></div>
+                    <div class="zuoyan11"></div>
+                    <div class="youyan11"></div>
+                    <div class="meimao111"></div>
+                    <div class="meimao112"></div>
+                </div>
+            </div>
+            <div class="sj"></div>
+
+            <div class="face-x">
+                <div class="zuiba-x"></div>
+                <div class="zuoyan-x"></div>
+                <div class="youyan-x"></div>
+                <div class="meimao1-x"></div>
+                <div class="meimao2-x"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="x3">
+        <div class="col-1">
+            <a href="#x1">回到顶部 &copy;</a>
+        </div>
+        <div class="col-2"></div>
+    </div>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/box.js"></script>
+    <script type="text/javascript" src="js/img.js"></script>
+    <script type="text/javascript" src="js/articleHot.js"></script>
+    <script type="text/javascript" src="js/iconWall.js"></script>
+</body>
+</html>

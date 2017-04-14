@@ -1,0 +1,38 @@
+.img-3d {
+    transform-style: preserve-3d;
+    perspective:2500px;
+    /*  background-color: #f0f0f0;*/
+    height: 100%;
+    width: 100%;
+
+}
+.img-3d>img{
+    height: 550px;
+    width: 350px;
+    position: absolute;
+    left: 166px;
+    top: 100px;
+}
+#btnImg {
+    position: absolute;
+    left: 260px;
+    top: 700px;
+    height: 100px;
+    width: 100px;
+    font-size: 20px;
+
+    border: 8px solid red;
+    border-radius: 100px;
+
+    /*设置两个边样式相同*/
+    border-left-color: orange;
+    border-top-color: orange;
+    border-bottom-color: cornflowerblue;
+    border-right-color: cornflowerblue;
+    box-sizing: border-box;
+}
+
+#btn1:hover{
+    transition: 1s linear;
+    transform: rotate(180deg) ;
+}

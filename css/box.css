@@ -1,0 +1,59 @@
+.box-3d{
+    width: 100%;
+    height: 100%;
+
+    /*开启3D*/
+    transform-style: preserve-3d;
+
+    margin: -10px 100px;
+    position: relative;
+
+    /*设置盒子旋转中心点*/
+    transform-origin: center center -50px;
+
+    /* transform: rotateX(15deg) rotateY(15deg);*/
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+
+    text-align: center;
+    line-height: 200px;
+    font-size: 36px;
+
+    position: absolute;
+
+}
+
+.box1{
+    background-color: rgba(0,0,0,.2);
+    top:-200px;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+}
+.box2{
+    background-color: rgba(255,0,0,.2);
+    left: 200px;
+    transform-origin: left;
+    transform: rotateY(90deg);
+}
+.box3{
+    background-color: rgba(0,255,0,.2);
+    top:200px;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+}
+.box4{
+    background-color: rgba(0,0,255,.2);
+    left: -200px;
+    transform-origin: right;
+    transform: rotateY(-90deg);
+}
+.box5{
+    background-color: rgba(255,255,0,.2);
+    transform: translateZ(-200px);
+}
+.box6{
+    background-color: rgba(0,255,255,.2);
+}
